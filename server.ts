@@ -36,11 +36,12 @@ server.on('listening', onListening);
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val:string) :string | number | false 
+function normalizePort(val:string) : string | number | false 
 {
   let port = parseInt(val, 10);
 
-  if (isNaN(port)) {
+  if (isNaN(port)) 
+  {
     // named pipe
     return val;
   }
@@ -59,7 +60,8 @@ function normalizePort(val:string) :string | number | false
 
 function onError(error: HttpError) : void
 {
-  if (error.syscall !== 'listen') {
+  if (error.syscall !== 'listen') 
+  {
     throw error;
   }
 
@@ -87,7 +89,7 @@ function onError(error: HttpError) : void
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() :void
+function onListening() : void
 {
   let addr = server.address() as AddressInfo;
   let bind = typeof addr === 'string'

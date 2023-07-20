@@ -6,14 +6,15 @@ import { GenerateToken } from '../Util/index';
 import mongoose from 'mongoose';
 
 // Utility function
-function SanitizeArray(unsanitizedValue:string | string[]): string[] {
-    if (Array.isArray(unsanitizedValue))
+function SanitizeArray(unsanitizedValue: string | string[]): string[]
+{
+    if(Array.isArray(unsanitizedValue))
     {
         return unsanitizedValue.map((value) => value.trim());
     } else if (typeof unsanitizedValue === "string")
     {
         return unsanitizedValue.split(",").map((value) => value.trim());
-    }else {
+    } else {
         return [];
     }
 }
@@ -141,12 +142,11 @@ export function AddMovie(req: Request, res: Response, next: NextFunction): void 
 
     try 
     {
-   
 
         let genres = SanitizeArray(req.body.genres);
-        let directors = SanitizeArray(req.body.directors );
-        let actors = SanitizeArray(req.body.actors );
-        let writers = SanitizeArray(req.body.writers );
+        let directors = SanitizeArray(req.body.directors);
+        let actors = SanitizeArray(req.body.actors);
+        let writers = SanitizeArray(req.body.writers);
     
         let movie = new Movie({
             movieID: req.body.movieID,
@@ -194,12 +194,10 @@ export function UpdateMovie(req: Request, res: Response, next: NextFunction): vo
     try
     {
         let id = req.params.id;
-
-
-    let genres = SanitizeArray(req.body.genres);
-    let directors = SanitizeArray(req.body.directors );
-    let actors = SanitizeArray(req.body.actors);
-    let writers = SanitizeArray(req.body.writers );
+        let genres = SanitizeArray(req.body.genres);
+        let directors = SanitizeArray(req.body.directors);
+        let actors = SanitizeArray(req.body.actors);
+        let writers = SanitizeArray(req.body.writers);
 
     let movieToUpdate = new Movie({
         _id: id,

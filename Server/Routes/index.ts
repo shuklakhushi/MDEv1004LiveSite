@@ -15,17 +15,17 @@ router.get('/find/:id', function(req, res, next)
   DisplayMovieByID(req, res, next);
 });
 
-router.post('/add', /*passport.authenticate('jwt', {session: false}), */function(req, res, next)
+router.post('/add', /* passport.authenticate('jwt', {session: false}),*/ function(req, res, next)
 {
   AddMovie(req, res, next);
 });
 
-router.put('/update/:id', /* passport.authenticate('jwt', {session: false}),*/ function(req, res, next)
+router.put('/update/:id', /*passport.authenticate('jwt', {session: false}),*/ function(req, res, next)
 {
   UpdateMovie(req, res, next);
 });
 
-router.delete('/delete/:id', /*passport.authenticate('jwt', {session: false}),*/ function(req, res, next)
+router.delete('/delete/:id', /*passport.authenticate('jwt', {session: false}), */ function(req, res, next)
 {
   DeleteMovie(req, res, next);
 });

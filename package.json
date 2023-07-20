@@ -1,11 +1,11 @@
 {
   "name": "mdev1004-m2023-ice8",
   "version": "0.0.8",
-  "description": "this is a demo project for MDEV1004 - ICE 8 - in the summer 2023 semester at Georgian",
+  "description": "This is a demo project for MDEV1004 - ICE 8 - in the Summer 2023 semester at Georgian",
   "author": "Khushi Shukla",
   "engines": {
-    "node": "20.1.0",
-    "npm": "9.6.4",
+    "node": "20.2.0",
+    "npm": "9.6.6",
     "yarn": "1.22.19"
   },
   "scripts": {
@@ -22,7 +22,7 @@
     "express-session": "^1.17.3",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.2.2",
+    "mongoose": "^7.2.1",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
@@ -38,7 +38,7 @@
     "@types/http-errors": "^2.0.1",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/morgan": "^1.9.4",
-    "@types/node": "^20.2.1",
+    "@types/node": "^20.1.4",
     "@types/passport": "^1.0.12",
     "@types/passport-jwt": "^3.0.9",
     "@types/passport-local": "^1.0.35"
