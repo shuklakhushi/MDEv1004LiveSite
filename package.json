@@ -1,7 +1,7 @@
 {
-  "name": "mdev1004-m2023-ice8",
-  "version": "0.0.8",
-  "description": "This is a demo project for MDEV1004 - ICE 8 - in the Summer 2023 semester at Georgian",
+  "name": "mdev1004-m2023-ice9",
+  "version": "0.0.9",
+  "description": "This is a demo project for MDEV1004 - ICE 9 - in the Summer 2023 semester at Georgian",
   "author": "Khushi Shukla",
   "engines": {
     "node": "20.2.0",
